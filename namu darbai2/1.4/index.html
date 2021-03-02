@@ -7,79 +7,68 @@
     </head>
 
     <body>
-        <h>Jūsų informacija</h><br><br>
+        <fieldset>
+            <legend>Jūsų informacija</legend>
+            <form action="/action_page.php">
+                <label for="fname">Vardas:</label>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+                <label for="lname">Pavardė:</label>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+            </form> 
+        </fieldset>
 
-        <form action="/action_page.php">
-            <label for="fname">Vardas:</label>
-            <input type="text" id="fname" name="fname" value=""><br><br>
-            <label for="lname">Pavardė:</label>
-            <input type="text" id="lname" name="lname" value=""><br><br>
-        </form> 
+        <fieldset>
+            <legend>Klausimai</legend>
 
-        <h>Klausimai</h><br><br>
+            <form action="/action_page.php">
+                <label for="choice">Kaip sužinojote apie mus?</label>
+                <select id="choice" name="choice">
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="friends">Draugų atsiliepimai</option> 
+                </select>
+            </form> 
 
-        <form action="/action_page.php">
-            <label for="choice">Kaip sužinojote apie mus?</label>
-            <select id="choice" name="choice">
-                <option value="google">Google</option>
-                <option value="facebook">Facebook</option>
-                <option value="youtube">Youtube</option>
-                <option value="friends">Draugų atsiliepimai</option> 
-            </select>
-        </form> 
+            <p>Ar apsilankysite vėl?</p>
 
-        <p>Ar apsilankysite vėl?</p>
+            <form action="/action_page.php">
+                <input type="radio" id="yes" name="choice" value="yes">
+                <label for="yes">Taip</label>
+                <input type="radio" id="no" name="choice" value="no">
+                <label for="no">Ne</label>
+                <input type="radio" id="perhaps" name="choice" value="perhaps">
+                <label for="perhaps">Galbūt</label>   
+            </form> 
 
-        <form action="/action_page.php">
-            <input type="radio" id="yes" name="choice" value="yes">
-            <label for="yes">Taip</label>
-            <input type="radio" id="no" name="choice" value="no">
-            <label for="no">Ne</label>
-            <input type="radio" id="perhaps" name="choice" value="perhaps">
-            <label for="perhaps">Galbūt</label>   
-        </form> 
+            <p>Ką manote apie kursą?</p>
 
-        <p>Ką manote apie kursą?</p>
+            <form action="/action_page.php">
+                <textarea name="message" style="width:700px; height:150px;" placeholder="Rašykite viską ką galvojate"></textarea>
+                <br>
+            </form>
 
-        <form action="/action_page.php">
-            <textarea name="message" style="width:700px; height:150px;" placeholder="Rašykite viską ką galvojate"></textarea>
-            <br>
-        </form>
+            <p>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</p>
 
-        <p>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</p>
-
-        <form action="/action_page.php">
-            <input type="checkbox" id="language1" name="language1" value="C#">
-            <label for="language1"> C#</label>
-            <input type="checkbox" id="language2" name="language2" value="JAVA">
-            <label for="language2"> JAVA</label>
-            <input type="checkbox" id="language3" name="language3" value="PHP">
-            <label for="language3"> PHP</label><br>
-            <input type="checkbox" id="language4" name="language4" value="HTML">
-            <label for="language4"> HTML</label>
-            <input type="checkbox" id="language5" name="language5" value="CSS">
-            <label for="language5"> CSS</label>
-            <input type="checkbox" id="language6" name="language6" value="JavaScript">
-            <label for="language6"> JavaScript</label><br>
-            <input type="checkbox" id="language7" name="language7" value="Python">
-            <label for="language7"> Python</label>
-            <input type="checkbox" id="language8" name="language8s" value="Ruby">
-            <label for="language8"> Ruby</label><br><br><br>
-            <input type="submit" value="Siųsti">
-        </form> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <form action="/action_page.php">
+                <input type="checkbox" id="language1" name="language1" value="C#">
+                <label for="language1"> C#</label>
+                <input type="checkbox" id="language2" name="language2" value="JAVA">
+                <label for="language2"> JAVA</label>
+                <input type="checkbox" id="language3" name="language3" value="PHP">
+                <label for="language3"> PHP</label><br>
+                <input type="checkbox" id="language4" name="language4" value="HTML">
+                <label for="language4"> HTML</label>
+                <input type="checkbox" id="language5" name="language5" value="CSS">
+                <label for="language5"> CSS</label>
+                <input type="checkbox" id="language6" name="language6" value="JavaScript">
+                <label for="language6"> JavaScript</label><br>
+                <input type="checkbox" id="language7" name="language7" value="Python">
+                <label for="language7"> Python</label>
+                <input type="checkbox" id="language8" name="language8s" value="Ruby">
+                <label for="language8"> Ruby</label><br><br><br>
+                <input type="submit" value="Siųsti">
+            </form> 
+        </fieldset>
     </body>
 </html>
