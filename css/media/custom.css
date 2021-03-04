@@ -1,0 +1,32 @@
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*sukarpymui*/
+article{
+    width: 100%;
+    height: 200px;
+    background-color: silver;
+}
+/*jei norima remelio reikia naudoti jau div*/
+div{
+
+    border: 1px solid black;
+    height: 100%;
+}
+/*padeda suprogramuoti prie skirtingu ekranu*/
+@media screen and (min-width:600px){
+    article{
+        width: 33.33%;
+    }
+}
+
+
+
+@media screen and (min-width:1000px){
+     article{
+        width: 25%;
+    }
+}

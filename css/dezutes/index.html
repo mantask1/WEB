@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+
+        <style>
+            div, nav{
+                width: 100px;
+                height: 100px;
+                /*                background-color: purple;*/
+                background-image: url("https://s3-eu-west-1.amazonaws.com/w3.cdn.gpd/gb.pedigree.56/large_5878dd85-86d0-4aa6-b3c8-0dd8f3f76ed9.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                border: 1px dashed black;
+
+                margin:10px;
+                text-shadow: 0px 0px 2px white;
+
+                /*                padding: 10px;*/
+                padding-left: 10px;
+                padding-top: 10px;
+
+                position: relative;
+            }
+
+            div:nth-child(1){
+                /*                visibility: hidden;*/
+                display:none;
+            }
+            /*            second box*/
+            div:nth-child(2){
+                box-shadow: 2px 2px 5px red;
+
+                border-radius: 10px;
+                border-bottom-left-radius: 50px;
+            }
+
+
+            div:nth-child(3){
+                border-radius: 60px;
+            }
+            /*z index - uzdeti (+)preikyje ar (-)gale z asyje*/
+            /*            */
+            div:nth-child(4){
+                position: relative;
+                left: 50px;
+                top: 30px;
+                z-index: -200;
+            }
+            /*            */
+            div:nth-child(5){
+                position: absolute;
+                left: 40px;
+                z-index: -500px;
+            }
+/*pritaikomas meniu/reklamom*/
+            .fixed{
+                position: fixed;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+<!--        nav,footer,header - sinonimas div. -->
+        <nav class="fixed">0. fixed</nav>
+        <div>1Gražus tekstas</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4relative</div>
+        <div>5absolute</div>
+        <div>6</div>
+        <div>7</div>
+        <div>7</div>
+        <div>7</div>
+        <div>7</div>
+
+
+    </body>
+</html>
