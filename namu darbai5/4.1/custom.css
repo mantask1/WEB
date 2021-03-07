@@ -1,0 +1,38 @@
+.container{
+    background-color:#f7f7f7;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:150px;
+    height:120px;
+}
+
+h{
+    display: block;
+    margin-left: auto;
+    margin=right: auto;
+    color:cornflowerblue;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+}
+
+.info{
+    font-family: Arial, sans-serif;
+    font-size: 9pt;
+    display: block;
+    margin-left: auto;
+    margin=right: auto;
+    line-height: 0.2;
+}
+
+.post{
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 3px 3px  #c4def2;
+  
+}
+
