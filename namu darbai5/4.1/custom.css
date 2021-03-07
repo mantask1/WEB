@@ -1,7 +1,7 @@
 .container{
     background-color:#f7f7f7;  
     height:auto;
-    
+
 }
 
 img{
@@ -59,7 +59,7 @@ h{
 }
 
 .discount{
-    
+
     align-items: center;
     background-color: orange;
     color:white;
@@ -102,7 +102,11 @@ button{
     margin-top: 20px;
 }
 
-.full{
-    color:orange;
+.comment{
+    font-size:15px;
+}
+
+.rating{
+    font-size:15px;
 }
 
