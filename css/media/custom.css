@@ -17,12 +17,15 @@ div{
     height: 100%;
 }
 /*padeda suprogramuoti prie skirtingu ekranu*/
+/*
 @media screen and (min-width:600px){
     article{
         width: 33.33%;
     }
 }
+*/
 
+/*
 
 
 @media screen and (min-width:1000px){
@@ -30,3 +33,4 @@ div{
         width: 25%;
     }
 }
+*/
