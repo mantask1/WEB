@@ -8,26 +8,25 @@
 
     <body>
 
-        <p id="suma"></p>
+        <p id="sum"></p>
 
         <script>
 
-            pirmasSkaicius = 10;
+            var firstNumber = 100;
 
-            antrasSkaicius = 20;
+            var secondNumber = 20;
 
-            skaiciuSuma = pirmasSkaicius + antrasSkaicius;
+            var numberSum = firstNumber + secondNumber;
 
-            console.log(skaiciuSuma);
+            console.log(numberSum);
 
-            var x = myFunction(10, 20);
-            document.getElementById("suma").innerHTML = x;
+            var x = getSum(firstNumber, secondNumber);
+            document.getElementById("sum").innerHTML = x;
 
-            function myFunction(pirmasSkaicius, antrasSkaicius){
-                return pirmasSkaicius + antrasSkaicius;
+            function getSum(firstNumber, secondNumber){
+                return numberSum;
             }
 
         </script>
-
     </body>
 </html>
