@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+
+    <body>
+
+        <table>
+            <tr>
+                <th>Vardas</th>
+                <th>Pavardė</th>
+                <th>Amžius</th>
+                <th>Nuotrauka</th>
+            </tr>
+        </table>
+
+        <script src="../jquery-3.6.0.js"></script>
+        <script src="students.js"></script>
+        <script>
+
+            var students = getStudents();
+
+
+            for(var i=0;i < students.length;i++){
+                var name = students[i].name;
+                var surname = students[i].surname;
+                var age = students[i].age;
+                var photo = students[i].photo;
+                var img = "<img src='"+photo+"'>";
+                $("table").append("<tr><td>"+name+"</td><td>"+surname+"</td><td>"+age+"</td><td>"+img+"</td></tr>");
+            }
+        </script>
+
+    </body>
+</html>

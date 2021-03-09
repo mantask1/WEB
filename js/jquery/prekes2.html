@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+
+    <body>
+        <label>Prekė</label>
+        <input type="text" id="item">
+        <label>Kaina</label>
+        <input type="text" id="price">
+        <button id="add">Pridėti</button>
+
+        <table>
+            <tr>
+                <th>Prekė</th>
+                <th>Kaina</th>
+            </tr>
+        </table>
+
+
+
+        <script src="jquery-3.6.0.js"></script>
+
+        <script>
+
+            $("#add").click(function(){
+                var item = $("#item").val();
+                var price = $("#price").val();
+
+                $("table").append("<tr><td>"+item+"</td><td>"+price+"</td></tr>");
+
+            })
+
+            $("input").keyup(function(event){
+                if(event.keyCode == 13){
+                    var item = $("#item").val();
+                    var price = $("#price").val();
+
+                    $("table").append("<tr><td>"+item+"</td><td>"+price+"</td></tr>");
+                }
+            })
+
+
+    //pavyzdys
+            $("bandymas").click(function(){
+
+            })
+
+        </script>
+
+    </body>
+</html>

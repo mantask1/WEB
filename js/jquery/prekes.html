@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+
+    <body>
+        <label>Prekė</label>
+        <input type="text" id="item">
+        <button id="add">Pridėti</button>
+        <ul></ul>
+
+
+        <script src="jquery-3.6.0.js"></script>
+
+        <script>
+            //mygtuko paspaudimo ivykis
+            $("#add").click(function(){
+                //paimti reiksme is input
+                var item = $("#item").val();//paimame reiksme is input ir priskiriame item kintamajam
+                //console.log(item);
+                //padeti reiksme i ul
+                $("ul").append("<li>"+item+"</li>");
+            })
+
+        </script>
+
+    </body>
+</html>
