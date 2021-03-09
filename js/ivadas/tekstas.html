@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+
+    <body>
+
+
+        <script>
+            var name = "Jonas";
+            var surname = "Jonaitis";
+
+            var connectedText = name.concat(surname);
+            alert(connectedText);
+
+            connectedText = name + " " + surname;
+
+            console.log(connectedText);
+
+            var cutText = connectedText.substring(3,6);
+
+            console.log(cutText);
+
+            var sentence = "Laba diena, kaip sekasi?";
+            var secretSentence = "Jonas;Jonaitis;180;30";
+
+            var wordArray = secretSentence.split(';');
+            console.log(wordArray);
+
+
+
+        </script>
+    </body>
+</html>

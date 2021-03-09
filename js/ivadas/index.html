@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+
+    <body>
+        <div onclick="alert('valio')"> Valio</div>
+
+
+
+<!--scriptas rasomas body gale-->
+<!--        stengiames visa logika ideti cia ar atskiruose js failuose-->
+        <script src="services.js"></script>
+        <script src="services1.js"></script>
+        <script src="services2.js"></script>
+        <script src="services3.js"></script>
+        <script>
+            // tiesiog pranesimas
+            alert('labas');
+
+            //kintamieji
+            var name = "Jonas";  // string
+            var age = 20;  // number
+            var weight = 70.5;  //number
+            var isStudent = true;  // boolean
+            var studentsAutoColor = "Raudona";
+            var programmingLanguages = ["c#","java"]; //string array
+            var workingDays = [1,2,3,4]; //number array
+
+
+            var student1 = {
+                name: "Jonas",
+                surname: "Jonaitis",
+                weight: 75.5,
+                workingDays: [1,2,3,4],
+                car: {
+                    brand: "BMW",
+                    color: "Black",
+                    licensePlate:"KLJ123"
+                }
+            };
+
+            var students = [student1, student2]; //object array
+
+
+            // is kitu programavimo kalbu
+            //string[] masyvas = new string[]{};
+           // var masyvas = new []{"",""}
+
+        </script>
+    </body>
+</html>
