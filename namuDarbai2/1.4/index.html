@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+
+    <body>
+
+        <fieldset>
+            <legend>Jūsų informacija</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label>Vardas:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fname" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Pavardė:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lname" value="">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Klausimai</legend>
+            <div>
+                <label>Kaip sužinojote apie mus?</label>
+                <select id="option" name="option">
+                    <option value="Google">Google</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Friends">Draugų atsiliepimai</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <div>
+                    <label>Ar apsilankysite vėl?</label>
+                </div>
+                <div>
+                    <label>Taip</label>
+                    <input type="radio" id="yes" name="choice" value="yes">
+                    <label>Ne</label>
+                    <input type="radio" id="no" name="choice" value="no">
+                    <label>Galbūt</label>
+                    <input type="radio" id="perhaps" name="choice" value="perhaps">
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <div>
+                    <label>Ką manote apie kursą?</label>
+                </div>
+                <div>
+                    <textarea name="message" style="width:700px; height:150px;" placeholder="Rašykite viską ką galvojate"></textarea>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</label>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="language1" name="language1" value="C#">
+                    </td>
+                    <td>
+                        <label>C#</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="language2" name="language2" value="JAVA">
+                    </td>
+                    <td>
+                        <label>JAVA</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="language3" name="language3" value="PHP">
+                    </td>
+                    <td>
+                        <label>PHP</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="language4" name="language4" value="HTML">
+                    </td>
+                    <td>
+                        <label>HTML</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="language5" name="language5" value="CSS">
+                    </td>
+                    <td>
+                        <label>CSS</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="language6" name="language6" value="JavaScript">
+                    </td>
+                    <td>
+                        <label>JavaScript</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="language7" name="language7" value="Python">
+                    </td>
+                    <td>
+                        <label>Python</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="language8" name="language8s" value="Ruby">
+                    </td>
+                    <td>
+                        <label>Ruby</label>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <div>
+                <input type="submit" value="Siųsti">
+            </div>
+        </fieldset>
+
+    </body>
+</html>
