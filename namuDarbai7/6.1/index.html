@@ -4,24 +4,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
+
+        <link rel="stylesheet" href="layout.css">
+
     </head>
 
     <body>
         <h1>Galerija</h1>
 
         <div class="container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="row">
+            </div>
         </div>
-
 
         <script src="jquery-3.6.0.js"></script>
         <script src="images.js"></script>
@@ -30,11 +24,10 @@
             var gallery = getImages();
 
             for(i = 0;i < gallery.length;i++){
-                var photo = gallery[i].photo;
-                var img = "<img src='"+photo+"'>";
-                $("body").append("<div>"+img+"</div>");
+                var photo = gallery[i];
+                var img = "<div class='image'><img src='"+photo+"'></div>";
+                $(".row").append("<div class='col-s12 col-m6 col-l4'>"+img+"</div>");
             }
         </script>
-
     </body>
 </html>
