@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="layout.css">
+    </head>
+
+    <body>
+        <!-- dinamiškai sugeneruoti elementai įdedami čia -->
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+
+        <script src="jquery-3.6.0.js"></script>
+        <script src="service.js"></script>
+        <script>
+            // kodą galite rašyti čia, objektų masyvą gausite iškvietę getComputers() funkciją, kuri aprašyta service.js faile
+            var computers = getComputers();
+
+            for(var i=0;i<computers.length;i++){
+                var id = computers[i].id;
+                var item = computers[i].item;
+                var image = computers[i].image;
+                var description = computers[i].descriptions;
+                var price = computers[i].price;
+                var oldPrice = computers[i].oldprice;
+
+                var img = "<div class='image'><img src='"+image+"'></div>";
+
+                $(".container").append("<div class='col-s12 col-m6 col-l6'>"+id+"</div><div class='col-s12 col-m6 col-l6'>"+item+"</div><div class='col-s12 col-m6 col-l6'>"+img+"</div><div class='col-s12 col-m6 col-l6'>"+description+"</div><div class='col-s12 col-m6 col-l6'>"+price+"</div><div class='col-s12 col-m6 col-l6'>"+oldPrice+"</div>")
+            }
+
+        </script>
+
+    </body>
+</html>
