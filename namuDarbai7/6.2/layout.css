@@ -1,18 +1,77 @@
 .container{
     width: 100%;
     margin: auto;
+
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+
 }
 
 img{
     width:200px;
-    height:200px:
+    height:200px;
+
 }
 
+.id{
+    font-weight: bold;
+    border: 2px solid black;
+    margin:1px;
+    height: 200px;
+    width: 200px;
+
+}
+
+/*
+.item{
+    border: 2px solid black;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    margin:5px;
+
+    text-align: center;
+}
+
+.img{
+    border: 2px solid black;
+
+
+}
+
+.description{
+    border: 2px solid black;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    margin:5px;
+
+    text-align: center;
+}
+
+.price{
+    border: 2px solid black;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    margin:5px;
+
+    text-align: center;
+}
+
+.oldprice{
+    border: 2px solid black;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    margin:5px;
+
+    text-align: center;
+}
+*/
 
 
 

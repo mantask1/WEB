@@ -10,8 +10,8 @@
     <body>
         <!-- dinamiškai sugeneruoti elementai įdedami čia -->
         <div class="container">
-            <div class="row">
-            </div>
+            <section class="row">
+            </section>
         </div>
 
         <script src="jquery-3.6.0.js"></script>
@@ -30,12 +30,12 @@
 
                 var img = "<div class='image'><img src='"+image+"'></div>";
 
-                $(".row").append("<div class='col-s12 col-m4 col-l2'>"+id+
-                                 "</div><div class='col-s12 col-m4 col-l2'>"+item+
-                                 "</div><div class='col-s12 col-m4 col-l2'>"+img+
-                                 "</div><div class='col-s12 col-m4 col-l2'>"+description+
-                                 "</div><div class='col-s12 col-m4 col-l2'>"+price+
-                                 "</div><div class='col-s12 col-m4 col-l2'>"+oldPrice+"</div>")
+                $(".row").append("<div class='col-s12 col-l2'><div class='id'>"+id+
+                                 "</div></div><div class='col-l2'><div class='item'>"+item+
+                                 "</div></div><div class='col-l2'><div class='img'>"+img+
+                                 "</div></div><div class='col-l2'><div class='description'>"+description+
+                                 "</div></div><div class='col-l2'><div class='price'>"+price+
+                                 "</div></div><div class='col-l2'><div class='oldprice'>"+oldPrice+"</div></div>")
             }
 
         </script>
