@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+
+        <style>
+            img{
+                width: 100%;
+            }
+
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .pic{
+                width: 300px;
+                height: 300px;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+
+
+            .modal{
+                display: none;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.5);
+                height: 0px;
+                width: 0px;
+                /*                horizantalus lygiavimas*/
+                justify-content: center;
+                /*                vertikalus lygiavimas*/
+                align-items:center;
+                z-index: 9999;
+            }
+
+            .modal div{
+                height: 600px;
+                width: 600px;
+            }
+
+            body{
+                margin:0px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="modal">
+            <div></div>
+        </div>
+
+
+        <div class="row">
+            <div class="pic"><img src="https://picsum.photos/id/237/300/300"></div>
+            <div class="pic"><img src="https://picsum.photos/id/236/300/300"></div>
+            <div class="pic"><img src="https://picsum.photos/id/238/300/300"></div>
+            <div class="pic"><img src="https://picsum.photos/id/239/300/300"></div>
+            <div class="pic"><img src="https://picsum.photos/id/250/300/300"></div>
+            <div class="pic"><img src="https://picsum.photos/id/251/300/300"></div>
+        </div>
+
+
+        <script src="../jquery-3.6.0.js"></script>
+        <script>
+
+            $("img").mouseover(function(){
+                // $(this).css({width:"310px", height:"310px"});
+                $(this).fadeTo(500, 0.5);
+            });
+
+            $("img").mouseout(function(){
+                //$(this).css({width:"300px", height:"300px"});
+                $(this).fadeTo(500, 1);
+            });
+
+            //modal formos yra langai kur paspaudus iššoka
+            $("img").click(function(){
+                $(".modal").css({display: "flex",
+                                 //                                 width: "100vw",
+                                 //                                 height: "100vh"
+                                });
+
+                $(".modal").animate({                                width: "100vw",
+                                     height: "100vh" },1000)
+
+                var imageUrl = $(this).attr("src");
+
+
+                $(".modal div").empty();
+                $(".modal div").append("<img src='"+imageUrl+"'>");
+            });
+
+
+            $(".modal").click(function(){
+                //                $(".modal").css({
+                ////                    display: "none",
+                //                      width: "0px",
+                //                      height: "0px"
+                //                                });
+
+                $(".modal").fadeOut(2000, function(){
+                    $(this).css({display: "none",width: "0px",height: "0px" });
+                    $(".modal div").empty();
+                })
+
+            })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+
+    <body>
+        <select id="language">
+            <option value="en">en</option>
+            <option value="lt">lt</option>
+        </select>
+
+        <h1 translation-title>Hello world!</h1>
+
+        <script src="../jquery-3.6.0.js"></script>
+        <script src="translation.js"></script>
+        <script>
+            var localStorage = window.localStorage;
+
+            var language = localStorage.getItem("lang");
+
+            $("#language").val(language);
+
+            // vykdom vertima
+            var translations = getTranslations(language);
+            console.log(translations);
+
+            $("[translation-title]").text(translations.title);
+
+
+            $("#language").change(function(){
+                //console.log($(this).val());
+
+                // vykdom vertima
+                var translations = getTranslations($(this).val());
+
+                $("[translation-title]").text(translations.title);
+
+                localStorage.setItem("lang",$(this).val());
+            });
+
+        </script>
+    </body>
+</html>
