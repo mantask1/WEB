@@ -75,7 +75,13 @@
 
 
         <!--        3 foto paimtos is nuotrauku masyvo-->
-
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="https://picsum.photos/200/300"></a>
+            <a class="carousel-item" href="#two!"><img src="https://picsum.photos/200/300"></a>
+            <a class="carousel-item" href="#three!"><img src="https://picsum.photos/200/300"></a>
+            <a class="carousel-item" href="#four!"><img src="https://picsum.photos/200/300"></a>
+            <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300"></a>
+        </div>
 
         <!--        3 foto paimtos is nuotrauku masyvo-->
 
@@ -139,7 +145,11 @@
                 var elems = document.querySelectorAll('.sidenav');
                 var instances = M.Sidenav.init(elems, {});
             });
-
+            //aktyvuoja foto karuseles efekta
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.carousel');
+                var instances = M.Carousel.init(elems, {});
+            });
 
         </script>
     </body>
