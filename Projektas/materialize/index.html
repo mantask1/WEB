@@ -16,9 +16,11 @@
                 text-align: center;
             }
 
+            /*
             .slides img{
-                width:100%;
+            width:100%;
             }
+            */
 
         </style>
     </head>
@@ -40,7 +42,7 @@
         <!--        meniu-->
         <main>
             <div class="navbar-fixed">
-                <nav class="white">
+                <nav class="green lighten-3">
                     <div class="nav-wrapper">
                         <a href="index.html" class="brand-logo"><img src="images/Logo.jpg"></a>
                         <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -56,32 +58,32 @@
             <ul class="sidenav" id="mobile-demo">
                 <li><a href="index.html">Pagrindinis</a></li>
                 <li><a href="mywork.html">Mano darbai</a></li>
-                <li><a href="contact.html">Kontaktais</a></li>
+                <li><a href="contact.html">Kontaktai</a></li>
                 <li><a class="search modal-trigger" href="#modal1"><i class="material-icons">search</i></a></li>
             </ul>
             <!--        meniu-->
 
             <!--foto vieta-->
-            <div class="section white">
-                <div class="row">
-
-                    <div class="col s12 l12">
-                        <img class="mainimage" src="images/1home.jpg">
-                    </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="images/1home.jpg">
                 </div>
             </div>
+            <!--
+<div class="section white">
+<div class="row">
+
+<div class="col s12 l12">
+
+</div>
+</div>
+</div>
+-->
             <!--foto vieta-->
 
             <!--        Teksto vieta/prisistatymas-->
             <div class="section white">
                 <div class="row container">
-                    <h5 class="grey-text text-darken-3 lighten-3">This is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</h5><p>Se quae occaecat domesticarum id nulla te ea fugiat iudicem nam labore
-                    reprehenderit tempor veniam proident hic est aliqua fugiat culpa mentitum. Ab ab
-                    philosophari. Te eu veniam magna dolor. Quid expetendis ita philosophari et
-                    expetendis minim noster ullamco magna. Officia esse incurreret vidisse, iis
-                    occaecat aut deserunt ex non iis malis incididunt in hic malis senserit. Se quo
-                    varias nescius, anim singulis de tractavissent. Elit do arbitror est ne malis
-                    velit illum probant.</p>
+                    <h4 class="grey-text text-darken-3 lighten-3 center">Kiekviena šventė mūsų gyvenime yra vienintelė ir nepakartojama ir norisi, kad ji būtų tobula</h4><p> Šventės planavimas kai kuriems mums atneša nemažai rūpesčių, o kitiems - neapsakomą džiaugsmą.</p> <p>Esu be galo laiminga galėdama bent dalele prisidėti prie šio kūrybinio proceso.</p> <p>Kiekvienas mano darbas derinamas individualiai iki smulkiausių detalių, kad gautumėte savo išsvajotą ir širdžiai mieliausią variantą.</p>
                 </div>
             </div>
             <!--        Teksto vieta/prisistatymas-->
@@ -125,7 +127,7 @@
             <!--        Komentarai. Ką mūsų klientai sako apie mus-->
             <div class="section white">
                 <div class="row container">
-                    <h5 class="header">Ką mūsų klientai sako apie mus</h5>
+                    <h4 class="header">Ką mūsų klientai sako apie mus</h4>
                     <div class="col s4 m4 l4">
                         <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
                     </div>
@@ -140,43 +142,48 @@
         </main>
         <!--        Komentarai. Ką mūsų klientai sako apie mus-->
 
+
         <!--footer-->
-        <footer class="page-footer white">
+
+        <footer class="footer-one">
             <div class="container">
                 <div class="row">
-                    <div class="col l4 s6">
-                        <a href="index.html" class="brand-logo"><img src="images/Logo.jpg"></a>
+                    <div class="col s12 m4 l4">
+                        <div class="footer-left-side">
+                            <a href="index.html" class="brand-logo"><img src="images/Logo.jpg"></a>
+                        </div>
                     </div>
-                    <div class="col l4 s6">
-                        <ul>
-                            <li><a class="black-text text-lighten-3" href="aboutus.html">Apie mus</a></li>
-                            <li><a class="black-text text-lighten-3" href="#!">Pirkimo nuostatos</a></li>
-                            <li><a class="black-text text-lighten-3" href="contact.html">Kontaktai</a></li>
-                            <li><a class="black-text text-lighten-3" href="#!">Blogas</a></li>
-                        </ul>
+                    <div class="col s12 m4 l4">
+                        <div class="footer-middle">
+                            <h5>Informacija</h5>
+                            <ul>
+                                <li><a class="black-text" href="aboutus.html">Apie mus</a></li>
+                                <li><a class="black-text" href="#!">Pirkimo nuostatos</a></li>
+                                <li><a class="black-text" href="contact.html">Individualūs užsakymai</a></li>
+                                <li><a class="black-text" href="contact.html">Kontaktai</a></li>
+                                <li><a class="black-text" href="blog.html">Blogas</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="col s12 m4 l4">
+                        <div class="footer-right-side">
+                            <h5>Socialiniai tinklai</h5>
+                            <a href="https://www.instagram.com/silkinislapas/"><img src="images/instagram.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/silkinislapas"><img src="images/facebook.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="footer-copyright">
-                <div class="container black-text">
-                    <div class="row">
-                        <div class="col l6 s6">
-                            © 2021. Šilkinis lapas. Visos teisės yra saugomos.
-                        </div>
-                        <div class="col l6 s6">
-                            <div class="footer-social">
-                                <a href="https://www.instagram.com/silkinislapas/">
-                                    <img src="images/instagram.png" alt="Instagram">
-                                </a>
-                                <a href="https://www.facebook.com/silkinislapas">
-                                    <img src="images/facebook.png" alt="Facebook">
-                                </a>
-                            </div>
-                        </div>
+            <div class="row footer-two">
+                <div class="col s12 m12 l12">
+                    <div class="center footer-bottom">
+                        <p>© 2021. Šilkinis lapas. Visos teisės yra saugomos.</p>
                     </div>
                 </div>
             </div>
         </footer>
+
         <!--footer-->
 
         <!--JavaScript at end of body for optimized loading-->
@@ -185,6 +192,10 @@
 
 
         <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.parallax');
+                var instances = M.Parallax.init(elems, {});
+            });
 
             // aktyvuoja "a hamburger icon"
             document.addEventListener('DOMContentLoaded', function() {
@@ -209,6 +220,7 @@
             $(document).ready(function(){
                 $('.modal').modal();
             });
+
 
         </script>
     </body>

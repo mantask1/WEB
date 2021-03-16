@@ -1,3 +1,9 @@
+<!--
+<?php
+// Start the session
+session_start();
+?>
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +14,22 @@
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="custom.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
+
+    <style>
+        /*
+        When creating your CSS selector,
+        change "brown" to something of your choosing
+        */
+        .waves-effect.waves-brown .waves-ripple {
+            /* The alpha value allows the text and background color
+            of the button to still show through. */
+            background-color: white;
+        }
+
+
+    </style>
 
     <body>
 
@@ -28,7 +49,7 @@
         <!--        meniu-->
 
         <div class="navbar-fixed">
-            <nav class="white">
+            <nav class="green lighten-3">
                 <div class="nav-wrapper">
                     <a href="index.html" class="brand-logo"><img src="images/Logo.jpg"></a>
                     <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -47,84 +68,118 @@
             <li><a href="contact.html">Kontaktai</a></li>
             <li><a class="search modal-trigger" href="#modal1"><i class="material-icons">search</i></a></li>
         </ul>
+        <!--        meniu-->
 
-        <!--    meniu-->
+        <!-- php dalis
+php
+<?php
+header('Content-Type: text/html;charset=UTF-8');
+
+if(isset($_POST["first_name"]) && isset($_POST["last_name"]) && isset($_POST["email"]) && isset($_POST["message"])){
+
+if(!isset($_SESSION["email"])){
+$_SESSION["email"] = $_POST["email"];
+}
+
+if($_SESSION["email"] != $_POST["email"]){
+echo("aaa");
+mail("zigmantas.rackauskas@gmail.com","Užsakymas "."nuo ".$_POST["first_name"], "".$_POST["last_name"]."\r\n".$_POST["email"]."\r\n\r\n".$_POST["message"]);
+$_SESSION["email"] = $_POST["email"];
+}
+
+}
+?>
+-->
+        <!--            php-->
 
         <!--main dalis-->
         <main class="container">
-            <div class="white">
-                <div class="row">
-                    <h4 class="header">Susisiekite su mumis</h4>
+            <div class="row">
+                <div class="col s12 l12">
+                    <div>
+                        <h2 class="header center">Susisiekite su mumis</h2>
+                    </div>
+                    <div>
+                        <h4> Kontaktai</h4>
+                        <p><i class="small material-icons">home</i>Laisvės g. 1, 90115, Plungė</p>
+                        <p><i class="small material-icons">phone</i>+370 666 99 888</p>
+                        <p><i class="small material-icons">mail</i>info@silkinislapas.lt</p>
+                    </div>
                 </div>
             </div>
-
             <div class="row">
-                <form class="col s12 l10">
+                <form class="col s12 l12">
                     <div class="row">
-                        <div class="input-field col s6">
-                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <div class="input-field col s6 l6">
+                            <input id="first_name" name="first_name" type="text" class="validate">
                             <label for="first_name">Vardas</label>
                         </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Elektroninis paštas</label>
-                            </div>
+                        <div class="input-field col s6 l6">
+                            <input id="email" name="email" type="email" class="validate">
+                            <label for="email">Elektroninis paštas</label>
                         </div>
                     </div>
-
+                </form>
+            </div>
+            <div class="row">
+                <form class="col s12 12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
                             <label for="textarea1">Žinutė</label>
                         </div>
                     </div>
-                    <a href="#!" class="btn waves-effect waves-teal">Siųsti</a>
                 </form>
             </div>
+            <div class="row">
+                <a href="#!" class="btn waves-effect" type="submit" name="action">Siųsti</a>
+            </div>
         </main>
-
-        <!--main dalis-->
-
+        <!--        main dalis-->
 
         <!--footer-->
-        <footer class="page-footer white">
+
+        <footer class="footer-one">
             <div class="container">
                 <div class="row">
-                    <div class="col l4 s6">
-                        <a href="index.html" class="brand-logo"><img src="images/Logo.jpg"></a>
+                    <div class="col s12 m4 l4">
+                        <div class="footer-left-side">
+                            <a href="index.html" class="brand-logo"><img src="images/Logo.jpg"></a>
+                        </div>
                     </div>
-                    <div class="col l4 s6">
-                        <ul>
-                            <li><a class="black-text text-lighten-3" href="aboutus.html">Apie mus</a></li>
-                            <li><a class="black-text text-lighten-3" href="#!">Pirkimo nuostatos</a></li>
-                            <li><a class="black-text text-lighten-3" href="contact.html">Kontaktai</a></li>
-                            <li><a class="black-text text-lighten-3" href="#!">Blogas</a></li>
-                        </ul>
+                    <div class="col s12 m4 l4">
+                        <div class="footer-middle">
+                            <h5>Informacija</h5>
+                            <ul>
+                                <li><a class="black-text" href="aboutus.html">Apie mus</a></li>
+                                <li><a class="black-text" href="#!">Pirkimo nuostatos</a></li>
+                                <li><a class="black-text" href="contact.html">Individualūs užsakymai</a></li>
+                                <li><a class="black-text" href="contact.html">Kontaktai</a></li>
+                                <li><a class="black-text" href="blog.html">Blogas</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="col s12 m4 l4">
+                        <div class="footer-right-side">
+                            <h5>Socialiniai tinklai</h5>
+                            <a href="https://www.instagram.com/silkinislapas/"><img src="images/instagram.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/silkinislapas"><img src="images/facebook.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="footer-copyright">
-                <div class="container black-text">
-                    <div class="row">
-                        <div class="col l6 s6">
-                            © 2021. Šilkinis lapas. Visos teisės yra saugomos.
-                        </div>
-                        <div class="col l6 s6">
-                            <div class="footer-social">
-                                <a href="https://www.instagram.com/silkinislapas/">
-                                    <img src="images/instagram.png" alt="Instagram">
-                                </a>
-                                <a href="https://www.facebook.com/silkinislapas">
-                                    <img src="images/facebook.png" alt="Facebook">
-                                </a>
-                            </div>
-                        </div>
+            <div class="row footer-two">
+                <div class="col s12 m12 l12">
+                    <div class="center footer-bottom">
+                        <p>© 2021. Šilkinis lapas. Visos teisės yra saugomos.</p>
                     </div>
                 </div>
             </div>
         </footer>
+
         <!--footer-->
+
 
         <!--JavaScript at end of body for optimized loading-->
         <script src="/js/jquery/jquery-3.6.0.js"></script>
