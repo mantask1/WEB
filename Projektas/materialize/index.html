@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
@@ -11,16 +12,48 @@
         <link rel="stylesheet" href="custom.css">
 
         <style>
-
-            div h2{
-                text-align: center;
-            }
-
+            /*          slides foto  */
             /*
             .slides img{
             width:100%;
             }
             */
+
+            /*
+            .parallax-container {
+            height: 400px;
+
+            }
+            */
+/*
+            .foto{
+                width:100%;
+            }
+*/
+
+            .main-text h4{
+                text-align: center;
+                font-family: "Segoe UI","Helvetica Neue",sans-serif !important;
+                line-height: 1;
+            }
+
+            .main-text p{
+                 text-align: center;
+                font-family:"Segoe UI","Helvetica Neue",sans-serif !important;
+                 line-height: 1;
+            }
+
+            .main-text .first-p{
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1;
+            }
+
+            span{
+                font-weight: bold;
+                font-size: 20px;
+                font-family: cursive;
+            }
 
         </style>
     </head>
@@ -63,58 +96,49 @@
             </ul>
             <!--        meniu-->
 
-            <!--foto vieta-->
+            <!--parallax efektas foto vieta-->
+
             <div class="parallax-container">
-                <div class="parallax"><img src="images/1home.jpg">
+                <div class="parallax"><img src="galery-slider/1home.jpg">
                 </div>
             </div>
-            <!--
-<div class="section white">
-<div class="row">
 
-<div class="col s12 l12">
-
-</div>
-</div>
-</div>
--->
-            <!--foto vieta-->
+            <!--parallax efektas foto vieta-->
 
             <!--        Teksto vieta/prisistatymas-->
             <div class="section white">
-                <div class="row container">
-                    <h4 class="grey-text text-darken-3 lighten-3 center">Kiekviena šventė mūsų gyvenime yra vienintelė ir nepakartojama ir norisi, kad ji būtų tobula</h4><p> Šventės planavimas kai kuriems mums atneša nemažai rūpesčių, o kitiems - neapsakomą džiaugsmą.</p> <p>Esu be galo laiminga galėdama bent dalele prisidėti prie šio kūrybinio proceso.</p> <p>Kiekvienas mano darbas derinamas individualiai iki smulkiausių detalių, kad gautumėte savo išsvajotą ir širdžiai mieliausią variantą.</p>
+                <div class="row container main-text">
+                    <h4 class="black-text center">Šilkinis lapas</h4><p class="first-p">Kiekviena šventė mūsų gyvenime yra vienintelė ir nepakartojama ir norisi, kad ji būtų tobula.</p><p> Šventės planavimas kai kuriems mums atneša nemažai rūpesčių, o kitiems - neapsakomą džiaugsmą.</p> <p>Esu be galo laiminga galėdama bent dalele prisidėti prie šio kūrybinio proceso.</p> <p>Kiekvienas mano darbas derinamas individualiai iki smulkiausių detalių, kad gautumėte savo išsvajotą ir širdžiai mieliausią variantą.</p>
                 </div>
             </div>
             <!--        Teksto vieta/prisistatymas-->
 
-
-            <!--        3 foto paimtos is nuotrauku masyvo-->
+            <!--        3 foto paimtos is nuotrauku masyvo.Naudojamas slider is materializo-->
             <div class="slider">
                 <ul class="slides">
                     <li>
-                        <img src="https://scontent.fkun1-1.fna.fbcdn.net/v/t1.0-9/152614661_2923244784627615_5871925227213947689_o.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=pYWPSLtcsdoAX8W-dFd&_nc_ht=scontent.fkun1-1.fna&oh=fb2a3de7b949e14cdb035f1746e87c03&oe=6074A2A2"> <!-- random image -->
+                        <img src="galery-slider/2slides.jpg">
                         <div class="caption center-align">
                             <h3>This is our big Tagline!</h3>
                             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                         </div>
                     </li>
                     <li>
-                        <img src="https://scontent.fkun1-1.fna.fbcdn.net/v/t1.0-9/146859763_2911466215805472_4242114203096779601_o.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=S7HIXWp_aMQAX-BM_r1&_nc_ht=scontent.fkun1-1.fna&oh=8208cbc46556f63d9cf7ede3c7a76600&oe=6074A556"> <!-- random image -->
+                        <img src="galery-slider/3slides.jpg">
                         <div class="caption left-align">
                             <h3>Left Aligned Caption</h3>
                             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                         </div>
                     </li>
                     <li>
-                        <img src="https://scontent.fkun1-1.fna.fbcdn.net/v/t1.0-9/124453800_2843814995903928_2814672156197668112_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=citVf_gPrJsAX8-bUR4&_nc_ht=scontent.fkun1-1.fna&oh=d73520ecc20926282cff7b002b94014e&oe=6074A644"> <!-- random image -->
+                        <img src="galery-slider/4slides.jpg">
                         <div class="caption right-align">
                             <h3>Right Aligned Caption</h3>
                             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                         </div>
                     </li>
                     <li>
-                        <img src="https://scontent.fkun1-1.fna.fbcdn.net/v/t1.0-9/96025411_2675716169380479_4189548938627383296_o.jpg?_nc_cat=111&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=tDjPhbyDU4QAX-fQVwV&_nc_ht=scontent.fkun1-1.fna&oh=900cd0bcdb3f82d4e41067c84d96b7f9&oe=6072268A"> <!-- random image -->
+                        <img src="galery-slider/1slides.jpg">
                         <div class="caption center-align">
                             <h3>This is our big Tagline!</h3>
                             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -127,15 +151,15 @@
             <!--        Komentarai. Ką mūsų klientai sako apie mus-->
             <div class="section white">
                 <div class="row container">
-                    <h4 class="header">Ką mūsų klientai sako apie mus</h4>
-                    <div class="col s4 m4 l4">
-                        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+                    <h4 class="header">Ką mūsų klientai sako apie mus:</h4>
+                    <div class="col s12 m4 l4">
+                        <p class="grey-text text-darken-3 lighten-3"><span>"</span>Norim padėkoti už labai gražią palinkėjimų knygą ir tą extrą paveiksliuką. Su Jumis bendravimas buvo labai lengvas, viską išaiškinote ir likome sužavėti Jūsų draugiškumu. Ačiū labai ir manau musu keliai dar susitiks ❤️<span>"</span></p>
                     </div>
-                    <div class="col s4 m4 l4">
-                        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+                    <div class="col s12 m4 l4">
+                        <p class="grey-text text-darken-3 lighten-3"><span>"</span>Dėkojame už nuostabius pakvietimus ir palinkėjimų knygą 😊❤️ laukiam nesulaukiam karantino pabaigos, kada galėsime juos įteikti svečiams 😍❣️<span>"</span></p>
                     </div>
-                    <div class="col s4 m4 l4">
-                        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+                    <div class="col s12 m4 l4">
+                        <p class="grey-text text-darken-3 lighten-3"><span>"</span>Labai džiaugiuosi pasirinkusi Šilkinį lapá svečiú knygos gamybai! 😇 Planavimo procesas buvo greitas, bet tuo pačiu ir smulkmeniškas, aptarėm kiekviená detalé, todėl buvau įsitikinus, kad bus gerai. O gavau dar daugiau nei tikėjaus - gražus pateikimas, kruopštus ir kokybiškas darbas😍<span>"</span></p>
                     </div>
                 </div>
             </div>
@@ -168,8 +192,8 @@
                     <div class="col s12 m4 l4">
                         <div class="footer-right-side">
                             <h5>Socialiniai tinklai</h5>
-                            <a href="https://www.instagram.com/silkinislapas/"><img src="images/instagram.png" alt="Instagram"></a>
-                            <a href="https://www.facebook.com/silkinislapas"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/silkinislapas/"><img src="images-icon/instagram.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/silkinislapas"><img src="images-icon/facebook%20(1).png" alt="Facebook"></a>
                         </div>
                     </div>
 
@@ -187,11 +211,13 @@
         <!--footer-->
 
         <!--JavaScript at end of body for optimized loading-->
-        <script src="/js/jquery/jquery-3.6.0.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!--        <script src="Projektas/materialize/js/facebook-comments.js"></script>-->
 
 
         <script>
+            //aktyvuoja parralax
             document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.parallax');
                 var instances = M.Parallax.init(elems, {});
@@ -201,12 +227,6 @@
             document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.sidenav');
                 var instances = M.Sidenav.init(elems, {});
-            });
-
-            //aktyvuoja foto karuseles efekta
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.carousel');
-                var instances = M.Carousel.init(elems, {});
             });
 
             //aktyvuoja nuotrauku slideshow efekta with jQuery
@@ -220,6 +240,15 @@
             $(document).ready(function(){
                 $('.modal').modal();
             });
+
+            //facebook komentarai
+
+            //            var data = getComments();
+            //
+            //            for(var i=0;i < data.length;i++){
+            //                var  createdTime = data[i];
+            //                var  message = data[i];
+            //            }
 
 
         </script>

@@ -6,7 +6,7 @@ function getComments(){
             id: "{page-id}_2191966997525824"
         },
         {
-           createdTime: "2021-01-18",
+            createdTime: "2021-01-18",
             message: "Atsakingas krupstus darbas;) , malonus, kantrus bendravimas;)atsiliepima rasau gerokai po darbo atsiemimo, bet geriau veliau nei niekada:) manau dar kreipsimes;)",
             id: "{page-id}_2191966997525824"
         },
@@ -26,10 +26,10 @@ function getComments(){
             createdTime: "2021-01-10",
             message: "Labai džiaugiuosi pasirinkusi Šilkinį lapá svečiú knygos gamybai! 😇 Planavimo procesas buvo greitas, bet tuo pačiu ir smulkmeniškas, aptarėm kiekviená detalé, todėl buvau įsitikinus, kad bus gerai. O gavau dar daugiau nei tikėjaus - gražus pateikimas, kruopštus ir kokybiškas darbas😍",
             id: "{page-id}_2191966997525824"
-        },
+        }
     ];
     return data;
-
+}
 //    "paging": {
 //    "cursors": {
 //      "before": "Q2c4U1pXNT...",

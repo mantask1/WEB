@@ -1,39 +1,32 @@
+
+
+
+/*
+body{
+    font-family: "Lucida Console", "Courier New", monospace !important;
+}
+*/
+
 /*meniu*/
 
 /*       logo image dydžio keitimas*/
-
-nav div a img{
-    width: 60px;
-    height: 60px;
-    padding: 0px;
-    margin: 0px;
+nav img{
+    max-width: 64px;
 }
+
 /*meniu teksto spalvos keitimas*/
 nav div a{
     color:black;
-}
-
-.mainimage{
-    width:100%;
-    height:400px;
-    margin:0px;
-}
-nav .green lighten-3{
-    height: 60px;
 }
 
 .material-icons{
     color:black;
 }
 
-nav-wrapper{
-    color:#a5d6a7;
-}
-
-.navbar-fixed li{
-    text-transform: uppercase;
-    font-family: sans-serif;
-}
+/*.navbar-fixed li{*/
+/*    text-transform: uppercase;*/
+/*    font-family: sans-serif;*/
+/*}*/
 
 /*meniu*/
 
@@ -45,6 +38,7 @@ nav-wrapper{
 /*klientu komentarai*/
 .header{
     text-align: center;
+    margin:12px;
 }
 /*footer*/
 body {
@@ -60,8 +54,7 @@ main {
 
 .footer-one div img{
     margin: 10px;
-    width:300px;
-    height:300px;
+    width:100%;
 }
 
 .footer-one div .row {
