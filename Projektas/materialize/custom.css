@@ -17,6 +17,7 @@ nav img{
 /*meniu teksto spalvos keitimas*/
 nav div a{
     color:black;
+    font-family: "Segoe UI","Helvetica Neue",sans-serif !important;
 }
 
 .material-icons{
@@ -40,7 +41,9 @@ nav div a{
     text-align: center;
     margin:12px;
 }
+
 /*footer*/
+
 body {
     display: flex;
     min-height: 100vh;
@@ -51,25 +54,24 @@ main {
     flex: 1 0 auto;
 }
 
-
 .footer-one div img{
-    margin: 10px;
     width:100%;
-}
-
-.footer-one div .row {
-    margin:0px;
 }
 
 .footer-right-side a img{
     width:20px;
     height:20px;
     text-align: right;
+    font-family: "Segoe UI","Helvetica Neue",sans-serif !important;
 }
 
-div .row .footer-two{
-    margin: 0px;
+.footer-right-side{
+    margin-left:50px;
+}
 
+.footer-middle{
+    font-family: "Segoe UI","Helvetica Neue",sans-serif !important;
+    margin-left: 50px;
 }
 
 .footer-one{
@@ -79,11 +81,15 @@ div .row .footer-two{
 
 .footer-one a{
     width:100%;
-
 }
 
 .footer-two{
     background-color: #a5d6a7;
+    margin:0px;
+}
+
+.footer-two p{
+    font-family:"Segoe UI","Helvetica Neue",sans-serif !important;
 }
 
 /*footer*/
