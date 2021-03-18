@@ -1,5 +1,5 @@
 function getImages(){
-    return ["",
+    return [
 
            ];
 }

@@ -43,6 +43,14 @@
                 font-family: cursive;
             }
 
+            .card{
+                height: 250px;
+                text-align: center;
+                padding-top: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                background-color: #a5d6a7;
+            }
         </style>
     </head>
 
@@ -70,7 +78,7 @@
                         <ul class="right hide-on-med-and-down">
                             <li><a href="index.html">Pagrindinis</a></li>
                             <li><a href="mywork.html">Mano darbai</a></li>
-                            <li><a href="contact.php">Kontaktai</a></li>
+                            <li><a href="contact.html">Kontaktai</a></li>
                             <li><a class="search modal-trigger" href="#modal1"><i class="material-icons">search</i></a></li>
                         </ul>
                     </div>
@@ -137,20 +145,18 @@
             <!--        3 foto paimtos is nuotrauku masyvo-->
 
             <!--        Komentarai. Ką mūsų klientai sako apie mus-->
+
             <div class="section white">
-                <div class="row container">
+                <div class="row">
                     <h4 class="header">Ką mūsų klientai sako apie mus:</h4>
-                    <div class="col s12 m4 l4">
-                        <p class="grey-text text-darken-3 lighten-3" id="comment"><span>"</span>Norim padėkoti už labai gražią palinkėjimų knygą ir tą extrą paveiksliuką. Su Jumis bendravimas buvo labai lengvas, viską išaiškinote ir likome sužavėti Jūsų draugiškumu. Ačiū labai ir manau musu keliai dar susitiks ❤️<span>"</span></p>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <p class="grey-text text-darken-3 lighten-3" id="comment"><span>"</span>Dėkojame už nuostabius pakvietimus ir palinkėjimų knygą 😊❤️ laukiam nesulaukiam karantino pabaigos, kada galėsime juos įteikti svečiams 😍❣️<span>"</span></p>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <p class="grey-text text-darken-3 lighten-3" id="comment"><span>"</span>Labai džiaugiuosi pasirinkusi Šilkinį lapá svečiú knygos gamybai! 😇 Planavimo procesas buvo greitas, bet tuo pačiu ir smulkmeniškas, aptarėm kiekviená detalé, todėl buvau įsitikinus, kad bus gerai. O gavau dar daugiau nei tikėjaus - gražus pateikimas, kruopštus ir kokybiškas darbas😍<span>"</span></p>
+                </div>
+
+                <div class="row container">
+                    <div id="comment">
                     </div>
                 </div>
             </div>
+
         </main>
         <!--        Komentarai. Ką mūsų klientai sako apie mus-->
 
@@ -199,9 +205,10 @@
         <!--footer-->
 
         <!--JavaScript at end of body for optimized loading-->
-        <script src="js/facebook-comments.js"></script>
+
         <script src="js/jquery-3.6.0.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="js/facebook-comments.js"></script>
 
 
         <script>
@@ -231,8 +238,18 @@
 
             //            facebook komentarai
 
-            var comments = get
+            var comments = getComments();
 
+            for(var i=0;i<comments.length;i++){
+                var createdTime = comments[i].createdTime;
+                var message = comments[i].message;
+
+                $("#comment").append("<div class='col s12 m4 l4'>"+
+                                     "<div class='card'>"+
+                                     "<div class='message'>"+message+"</div>"+
+                                     "</div>"+
+                                     "</div>")
+            }
 
 
         </script>

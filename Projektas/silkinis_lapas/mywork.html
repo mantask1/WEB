@@ -55,10 +55,10 @@
             .dropdown-content li a{
                  color:black;
             }
-/*
 
-            .card-content p{
-                margin-bottom: 100px;
+/*
+            .middle{
+                height: 450px;
             }
 */
 
@@ -346,6 +346,7 @@
         <!--JavaScript at end of body for optimized loading-->
         <script src="js/jquery-3.6.0.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+<!--        <script src="js/images.js"></script>-->
 
         <script>
 
@@ -353,12 +354,6 @@
             document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.sidenav');
                 var instances = M.Sidenav.init(elems, {});
-            });
-
-            //aktyvuoja "collapsible"
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.collapsible');
-                var instances = M.Collapsible.init(elems, {});
             });
 
             //aktyvuoja modal search mygtuka with jQuery
@@ -403,12 +398,13 @@
 
             $(".modal-img").click(function(){
 
-                $(".modal-img").fadeOut(200, function(){
+                $(".modal-img").fadeOut(300, function(){
                     $(this).css({display:"none", width: "0px", height: "0px"});
                 });
 
                 $(".modal-img div").empty();
             })
+
 
         </script>
     </body>

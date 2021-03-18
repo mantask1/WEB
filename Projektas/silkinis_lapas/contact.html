@@ -40,8 +40,8 @@ session_start();
             margin:5px;
         }
 
-        p{
-            margin:0px;
+       .footer-bottom p{
+            margin:14.5px;
         }
 
     </style>
@@ -62,30 +62,31 @@ session_start();
         </div>
 
         <!--        meniu-->
-        <div class="navbar-fixed">
-            <nav class="green lighten-3">
-                <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo"><img src="images/Logo.jpg"></a>
-                    <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html">Pagrindinis</a></li>
-                        <li><a href="mywork.html">Mano darbai</a></li>
-                        <li><a href="contact.html">Kontaktai</a></li>
-                        <li><a class="search modal-trigger" href="#modal1"><i class="material-icons">search</i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">Pagrindinis</a></li>
-            <li><a href="mywork.html">Mano darbai</a></li>
-            <li><a href="contact.html">Kontaktai</a></li>
-            <li><a class="search modal-trigger" href="#modal1"><i class="material-icons">search</i></a></li>
-        </ul>
-        <!--        meniu-->
+        <main>
+            <div class="navbar-fixed">
+                <nav class="green lighten-3">
+                    <div class="nav-wrapper">
+                        <a href="index.html" class="brand-logo"><img src="images/Logo.jpg"></a>
+                        <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html">Pagrindinis</a></li>
+                            <li><a href="mywork.html">Mano darbai</a></li>
+                            <li><a href="contact.html">Kontaktai</a></li>
+                            <li><a class="search modal-trigger" href="#modal1"><i class="material-icons">search</i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Pagrindinis</a></li>
+                <li><a href="mywork.html">Mano darbai</a></li>
+                <li><a href="contact.html">Kontaktai</a></li>
+                <li><a class="search modal-trigger" href="#modal1"><i class="material-icons">search</i></a></li>
+            </ul>
+            <!--        meniu-->
 
-        <!--        php dalis-->
-        <!--
+            <!--        php dalis-->
+            <!--
 
 <?php
 header('Content-Type: text/html;charset=UTF-8');
@@ -104,65 +105,65 @@ $_SESSION["email"] = $_POST["email"];
 
 }
 ?> -->
-        <!--            php dalis-->
+            <!--            php dalis-->
 
-        <!--main dalis-->
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l12">
-                    <div>
-                        <h2 class="header center">Susisiekite</h2>
-                    </div>
-                    <div>
-                        <h4> Kontaktai</h4>
-                        <div class="icon">
-                            <p><i class="small material-icons">home</i>Laisvės g. 1, 90115, Plungė</p>
+            <!--main dalis-->
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l12">
+                        <div>
+                            <h2 class="header center">Susisiekite</h2>
                         </div>
-                        <div class="icon">
-                            <p><i class="small material-icons">phone</i>+370 666 99 888</p>
-                        </div>
-                        <div class="icon">
-                            <p><i class="small material-icons">mail</i>info@silkinislapas.lt</p>
+                        <div>
+                            <h4> Kontaktai</h4>
+                            <div class="icon">
+                                <p><i class="small material-icons">home</i>Laisvės g. 1, 90115, Plungė</p>
+                            </div>
+                            <div class="icon">
+                                <p><i class="small material-icons">phone</i>+370 666 99 888</p>
+                            </div>
+                            <div class="icon">
+                                <p><i class="small material-icons">mail</i>info@silkinislapas.lt</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <form method="post" action="contact.html" class="col s12 l12 m12">
-                    <div class="row">
-                        <div class="input-field col s6 l6">
-                            <input id="first_name" name="first_name" type="text" class="validate">
-                            <label for="first_name">Vardas</label>
+                <div class="row">
+                    <form method="post" action="contact.html" class="col s12 l12 m12">
+                        <div class="row">
+                            <div class="input-field col s6 l6">
+                                <input id="first_name" name="first_name" type="text" class="validate">
+                                <label for="first_name">Vardas</label>
+                            </div>
+                            <div class="input-field col s6 l6">
+                                <input id="last_name" name="last_name" type="text" class="validate">
+                                <label for="last_name">Pavardė</label>
+                            </div>
                         </div>
-                        <div class="input-field col s6 l6">
-                            <input id="last_name" name="last_name" type="text" class="validate">
-                            <label for="last_name">Pavardė</label>
+                        <div class="row">
+                            <div class="input-field col s12 m12 l12">
+                                <input id="email" name="email" type="email" class="validate">
+                                <label for="email">Elektroninis paštas</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 m12 l12">
-                            <input id="email" name="email" type="email" class="validate">
-                            <label for="email">Elektroninis paštas</label>
+                        <div class="row">
+                            <div class="input-field col s12 m12 l12">
+                                <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Žinutė</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 m12 l12">
-                            <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
-                            <label for="textarea1">Žinutė</label>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <button class="btn waves-effect waves-green right" type="submit" name="action">Siųsti
+                                    <!--                                <i class="material-icons right">send</i>-->
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <button class="btn waves-effect waves-green right" type="submit" name="action">Siųsti
-                                <!--                                <i class="material-icons right">send</i>-->
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
-
+        </main>
         <!--        main dalis-->
 
         <!--footer-->
