@@ -16,12 +16,16 @@ Išspausdinimas į naršyklės langą, pasirinktą konteinerį.-->
     <body>
         <div class="container"></div>
 
-
+        <script src="jquery-3.6.0.js"></script>
         <script src="mylibrary.js"></script>
         <script>
 
-            let day = DayOfWeekByNumber(5);
-            $(".container").append("<div>"+day+"</div>)
+            let day = DayOfWeekByNumber(7);
+
+            console.log(day);
+
+            $(".container").append("<div>"+day+"</div>")
+
         </script>
 
     </body>

@@ -15,4 +15,9 @@ function DayOfWeekByNumber(index){
     else{
         return weekDays[index-1];
     }
+
+    //    let body = document.getElementsByTagName("body")[0];
+    //    let element = document.createElement("div");
+    //    element.innerHTML = weekDays;
+    //    div.appendChild(element);
 }
