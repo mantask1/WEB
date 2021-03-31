@@ -1,4 +1,4 @@
-function DayOfWeekByNumber(index){
+function dayOfWeekByNumber(index) {
     let weekDays = [
         "Pirmadienis",
         "Antradienis",
@@ -9,15 +9,16 @@ function DayOfWeekByNumber(index){
         "Sekmadienis",
     ];
 
-    if(index < 1 || index > 7){
-        return null;
+    if (isNaN(index)) {
+        let text = "Klaida. Įveskite skaičių nuo 1 iki 7.";
+        console.log(text);
     }
-    else{
-        return weekDays[index-1];
+    else if (index < 1 || index > 7) {
+        let text = null;
+        console.log(text);
     }
-
-    //    let body = document.getElementsByTagName("body")[0];
-    //    let element = document.createElement("div");
-    //    element.innerHTML = weekDays;
-    //    div.appendChild(element);
+    else {
+        let text = weekDays[index - 1];
+        console.log(text);
+    }
 }

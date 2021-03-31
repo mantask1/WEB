@@ -1,4 +1,4 @@
-function printDivisionResult(x, y){
+function printDivisionResult(x, y) {
     var divisionResult = x / y;
     console.log(divisionResult);
 }

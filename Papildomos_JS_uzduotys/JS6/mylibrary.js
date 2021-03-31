@@ -1,4 +1,4 @@
-function getDayOfWeekByNumber(index){
+function getDayOfWeekByNumber(index) {
     let weekDays = [
         "Pirmadienis",
         "Antradienis",
@@ -9,10 +9,15 @@ function getDayOfWeekByNumber(index){
         "Sekmadienis",
     ];
 
-    if(index < 1 || index > 7){
+    var text;
+
+    if (isNaN(index)) {
+        return text = "Klaida. Įveskite skaičių nuo 1 iki 7.";
+    }
+    else if(index < 1 || index > 7) {
         return null;
     }
-    else{
-        return weekDays[index-1];
+    else {
+        return weekDays[index - 1];
     }
 }

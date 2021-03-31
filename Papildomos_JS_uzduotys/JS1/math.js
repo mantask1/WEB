@@ -1,3 +1,3 @@
-function getDivisionResult(x,y){
+function getDivisionResult(x, y) {
     return divisionResult = x / y;
 }
