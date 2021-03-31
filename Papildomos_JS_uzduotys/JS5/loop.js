@@ -2,7 +2,7 @@
 
 function printName(numberX) {
     for (var i = 0; i < numberX; i++) {
-        var  text = "Mantas";
+        var text = "Mantas";
         alert(text);
     }
 }
