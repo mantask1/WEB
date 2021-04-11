@@ -6,9 +6,49 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <div class="calculator">
+            <div class="display">
+                <p id="output">2021</p>
+            </div>
+            <div class="keys">
+                <div class="row">
+                    <button id="7" onclick="forDisplay('7')">7</button>
+                    <button id="8" onclick="forDisplay('8')">8</button>
+                    <button id="9" onclick="forDisplay('9')">9</button>
+                    <button id="+" class="operator" onclick="operator()">+</button>
+                </div>
+                <div class="row">
+                    <button id="4" onclick="forDisplay('4')">4</button>
+                    <button id="5" onclick="forDisplay('5')">5</button>
+                    <button id="6" onclick="forDisplay('6')">6</button>
+                    <button id="-" class="operator">-</button>
+                </div>
+                <div class="row">
+                    <button id="1" onclick="forDisplay('1')" >1</button>
+                    <button id="2" onclick="forDisplay('2')">2</button>
+                    <button id="3" onclick="forDisplay('3')">3</button>
+                    <button id="*" class="operator">*</button>
+                </div>
+                <div class="row">
+                    <button id="C" class="operator" onclick="clearOutput()">C</button>
+                    <button id="0" onclick="forDisplay('0')">0</button>
+                    <button id="/" class="operator">/</button>
+                    <button id="=" class="operator">=</button>
+                </div>
+            </div>
+        </div>
 
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+        <script src="action.js"></script>
+        <script>
+
+            console.log(getResult(4, "*", 2));
+
+
+        </script>
     </body>
 </html>
