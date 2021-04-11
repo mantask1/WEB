@@ -6,9 +6,42 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
+        <style>
+
+            header{
+                height: 50px;
+                background-color: purple;
+            }
+
+            main{
+                background-color: blue;
+            }
+
+        </style>
     </head>
 
     <body>
 
+        <div class="container">
+            <header></header>
+            <main></main>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            // jūsų kodas. Aprašykite pelės žymėklio paspaudimo įvykė ant header elemento. Paspaudus ant header elemento turi atsirasti arba išsiskleisti su animacija main elementas kaip parodyta paveikslėlyje.
+
+            $("header").click(function() {
+                $("main").animate({
+                    height: "300px"
+                }, 2000, function() {
+                    $("main").animate({
+                        height: "0px"
+                    }, 2000);
+                });
+            });
+
+        </script>
     </body>
 </html>
