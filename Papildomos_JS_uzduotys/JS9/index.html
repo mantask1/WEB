@@ -9,6 +9,21 @@
     </head>
 
     <body>
+        <div></div>
 
+
+
+        <script src="personInfo.js"></script>
+        <script src="jquery-3.6.0.js"></script>
+        <script>
+
+            let result = getNewListOfPersonNames();
+
+            for (i = 0; i < result.length; i++) {
+                let newList = result[i];
+                $("div").append("<li>" + newList + "</li>");
+            }
+
+        </script>
     </body>
 </html>
