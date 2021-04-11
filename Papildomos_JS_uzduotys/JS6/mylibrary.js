@@ -15,7 +15,7 @@ function getDayOfWeekByNumber(index) {
         return text = "Klaida. Įveskite skaičių nuo 1 iki 7.";
     }
     else if(index < 1 || index > 7) {
-        return null;
+        return text = "Klaida. Įveskite skaičių nuo 1 iki 7.";
     }
     else {
         return weekDays[index - 1];
