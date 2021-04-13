@@ -11,13 +11,11 @@
     <body>
         <div></div>
 
-
-
         <script src="personInfo.js"></script>
         <script src="jquery-3.6.0.js"></script>
         <script>
 
-            let result = getNewListOfPersonNames();
+            let result = getNewListOfPersonNames(namesArray, nameNoReturn);
 
             for (i = 0; i < result.length; i++) {
                 let newList = result[i];
