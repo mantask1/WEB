@@ -45,11 +45,11 @@ function getResult(firstNumber, operator, secondNumber) {
         case "*":
             result = multiply(Number(firstNumber), Number(secondNumber));
             break;
-//        case "/":
-//            if( !== 0) {
-//                result = divide(Number(firstNumber), Number(secondNumber));
-//            } else alert("Cannot divide from zero. Try again");
-//            break;
+        case "/":
+            if( secondNumber !== 0) {
+                result = divide(Number(firstNumber), Number(secondNumber));
+            } else alert("Cannot divide from zero. Try again");
+            break;
     }
     return result;
 }
