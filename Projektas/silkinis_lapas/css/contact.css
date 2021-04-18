@@ -1,0 +1,23 @@
+ /*
+        When creating your CSS selector,
+        change "brown" to something of your choosing
+        */
+        .waves-effect{
+            /* The alpha value allows the text and background color
+            of the button to still show through. */
+            background-color: darkseagreen!import;
+        }
+
+        .btn{
+            background-color: #a5d6a7;
+            color: black;
+            font-family: "Segoe UI","Helvetica Neue",sans-serif !important;
+        }
+
+        .icon i{
+            margin:5px;
+        }
+
+        .footer-bottom p{
+            margin:14.5px;
+        }
