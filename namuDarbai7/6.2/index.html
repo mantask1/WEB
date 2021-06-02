@@ -30,12 +30,15 @@
 
                 var img = "<div class='image'><img src='"+image+"'></div>";
 
-                $(".row").append("<div class='col-s12 col-l2'><div class='id'>"+id+
-                                 "</div></div><div class='col-l2'><div class='item'>"+item+
-                                 "</div></div><div class='col-l2'><div class='img'>"+img+
-                                 "</div></div><div class='col-l2'><div class='description'>"+description+
-                                 "</div></div><div class='col-l2'><div class='price'>"+price+
-                                 "</div></div><div class='col-l2'><div class='oldprice'>"+oldPrice+"</div></div>")
+                $(".row").append(
+                    "<div class='col-s12 col-l2'>"+
+                        "<div class='id'>"+id+"</div>"+
+                    "</div>"+
+                    "<div class='col-s12 col-l2'><div class='item'>"+item+
+                                 "</div></div><div class='col-s12 col-l2'><div class='img'>"+img+
+                                 "</div></div><div class='col-s12 col-l2'><div class='description'>"+description+
+                                 "</div></div><div class='col-s12 col-l2'><div class='price'>"+price+
+                                 "</div></div><div class='col-s12 col-l2'><div class='oldprice'>"+oldPrice+"</div></div>")
             }
 
         </script>

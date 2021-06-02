@@ -6,6 +6,10 @@
         <title></title>
         <!--        <link rel="stylesheet" href="custom.css">-->
         <style>
+            @font-face {
+                font-family: myFont;
+                src: url(sansation_light.woff);
+            }
 
             .container{
                 background-color: whitesmoke;
@@ -29,11 +33,11 @@
 
             .days {
                 padding: 0px;
-                /*                background: #eee;*/
                 margin: 0px;
             }
 
             .days li {
+                font-family: myFont;
                 width:100px;
                 height: 100px;
                 list-style-type: none;
@@ -43,8 +47,6 @@
                 margin-bottom: 10px;
                 font-size:12px;
                 color:black;
-             background-color:
-
             }
 
             .weekend{
@@ -59,6 +61,11 @@
             div{
                 display: block;
 
+            }
+
+            p:hover{
+                background-color: green;
+                color:yellow;
             }
         </style>
 
@@ -81,7 +88,7 @@
                 <li class="d">4</li>
                 <li class="d">5</li>
                 <li class="weekend">6</li>
-                <li class="weekend">7</li>
+                <li class="weekend">7 <p>Vilnius Running</p></li>
                 <li class="d">8</li>
                 <li class="d">9</li>
                 <li class="d">10</li>
@@ -90,13 +97,13 @@
                 <li class="d">13</li>
                 <li class="weekend">14</li>
                 <li class="weekend">15</li>
-                <li class="d">16</li>
+                <li class="d">16 <p>Concert</p></li>
                 <li class="d">17</li>
                 <li class="d">18</li>
                 <li class="d">19</li>
                 <li class="d">20</li>
                 <li class="d">21</li>
-                <li class="weekend">22</li>
+                <li class="weekend">22<p>Summer Festival</p></li>
                 <li class="weekend">23</li>
                 <li class="d">24</li>
                 <li class="d">25</li>

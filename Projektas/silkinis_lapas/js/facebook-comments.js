@@ -7,27 +7,30 @@ function getComments(){
         },
 
         {
-            "createdTime": "2021-01-18",
+            //            "createdTime": "2021-01-18",
             "message": "Dėkojame už nuostabius pakvietimus ir palinkėjimų knygą 😊❤️ laukiam nesulaukiam karantino pabaigos, kada galėsime juos įteikti svečiams 😍❣️",
-            "id": "{page-id}_2191966997525824"
+            //            "id": "{page-id}_2191966997525824"
         },
 
         {
-            "createdTime": "2021-02-17",
+            //            "createdTime": "2021-02-17",
             "message": "Labai džiaugiuosi pasirinkusi Šilkinį lapá svečiú knygos gamybai! 😇 Planavimo procesas buvo greitas, bet tuo pačiu ir smulkmeniškas, aptarėm kiekviená detalé, todėl buvau įsitikinus, kad bus gerai. O gavau dar daugiau nei tikėjaus - gražus pateikimas, kruopštus ir kokybiškas darbas😍",
-            "id": "{page-id}_2191966997525824"
+            //            "id": "{page-id}_2191966997525824"
         }
 
     ];
 }
 
+function placeItems(comments) {
 
-//    "paging": {
-//    "cursors": {
-//      "before": "Q2c4U1pXNT...",
-//      "after": "Q2c4U1pXNT..."
-//    },
-//    "next": "https://graph.facebook.com/vX.X/{page-id}/feed?access_token={your-page-access-token}&pretty=0&limit=25&after=Q2c4U1pXNT..."
-//  }
-//
-//}
+    for(var i = 0; i < comments.length; i++) {
+        var createdTime = comments[i].createdTime;
+        var message = comments[i].message;
+
+        $("#comment").append("<div class='col s12 m4 l4'>"+
+                             "<div class='card'>"+
+                             "<div class='message'>"+message+"</div>"+
+                             "</div>"+
+                             "</div>");
+    }
+}

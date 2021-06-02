@@ -4,11 +4,17 @@ function checkAge(age) {
     var text;
 
     if (isNaN(age)) {
-        text = "Klaida. Prašome bandyti dar kartą";
-    } else {
-        text = (age < 18)
-            ?"Atsiprašome, negalite užeiti į svetainę"
-            :"Sveiki, jūs galite užeiti į svetainę";
+        text = getTextForAge(age);
     }
-    console.log(text);
+
+    function getTextForAge(age){
+        return (age < 18)
+            ?"Atsiprašome, negalite užeiti į svetainę"
+        :"Sveiki, jūs galite užeiti į svetainę";
+    }
+
+
+    return text;
+
 }
+

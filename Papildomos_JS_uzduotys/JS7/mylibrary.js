@@ -1,4 +1,6 @@
-function printDayOfWeekByNumber(index) {
+
+//let element = "";
+function printDayOfWeekByNumber(index, Element) {
     let weekDays = [
         "Pirmadienis",
         "Antradienis",
@@ -9,24 +11,18 @@ function printDayOfWeekByNumber(index) {
         "Sekmadienis"
     ];
 
-    if (isNaN(index)) {
+
+
+    if (isNaN(index, Element)) {
         let text = "Klaida. Įveskite skaičių nuo 1 iki 7.";
-        $(".container").append("<div>" + text + "</div>")
+        $Element.append("<div>" + text + "</div>")
     }
-    else if (index < 1 || index > 7) {
+    else if (index < 1 || index > 7, Element) {
         let text = "Klaida. Įveskite skaičių nuo 1 iki 7.";
-        $(".container").append("<div>" + text + "</div>")
+        $Element.append("<div>" + text + "</div>")
     }
     else {
         let text = weekDays[index - 1];
-        $(".container").append("<div>" + text + "</div>")
-
-        //        let divElements = document.getElementsByTagName("div");
-        //
-        //        let divElement = divElements[0];
-        //
-        //        divElement.innerHTML = text;
-        //
-        //        console.log(divElement);
+        $Element.append("<div>" + text + "</div>")
     }
 }

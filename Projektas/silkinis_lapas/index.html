@@ -171,7 +171,6 @@
         <script src="js/jquery-3.6.0.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script src="js/facebook-comments.js"></script>
-        <script src="js/place-items.js"></script>
 
         <script>
             //activate parralax
@@ -199,18 +198,7 @@
 
             var comments = getComments();
 
-            for(var i=0; i<comments.length; i++) {
-                var createdTime = comments[i].createdTime;
-                var message = comments[i].message;
-
-                $("#comment").append("<div class='col s12 m4 l4'>"+
-                                     "<div class='card'>"+
-                                     "<div class='message'>"+message+"</div>"+
-                                     "</div>"+
-                                     "</div>");
-            }
-
-//            placeItems(comments);
+            placeItems(comments);
 
         </script>
     </body>
